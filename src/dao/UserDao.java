@@ -26,6 +26,7 @@ public class UserDao {
 		return ps.executeQuery();
 	}
 
+	
 	public int delete(User user, Connection con) throws SQLException {
 		String sql = "delete from Student where name='" + user.getName() + "'";
 		PreparedStatement ps = con.prepareStatement(sql);
